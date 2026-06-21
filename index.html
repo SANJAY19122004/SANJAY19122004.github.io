@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjay — Full Stack Developer</title>
+<meta name="description" content="Sanjay - Computer Science student and Full Stack Developer specializing in MERN stack and Java.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">SE<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal">CSE student · Puducherry, India</p>
+    <h1 class="hero-title">
+      <span class="line reveal">Building things</span>
+      <span class="line reveal">on the <em>full</em></span>
+      <span class="line reveal">stack<span class="cursor-blink">_</span></span>
+    </h1>
+    <p class="hero-sub reveal">
+      I'm Sanjay — a CSE undergrad who turns ideas into working products
+      with the MERN stack and Java. Currently graduating 2026, currently shipping.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-primary">View my work</a>
+      <a href="SANJAY_DEV_RESUME.pdf" class="btn btn-ghost" download>Download résumé</a>
+    </div>
+    <div class="hero-meta reveal">
+      <a href="https://github.com/SANJAY19122004" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="mailto:sanjayelango777@gmail.com">Email ↗</a>
+      <a href="tel:6380080642">Call ↗</a>
+    </div>
+  </div>
+  <div class="hero-photo-wrap reveal">
+    <div class="hero-photo">
+      <img src="assets/profile.jpg" alt="Portrait of Sanjay" id="heroPhoto" onerror="this.parentElement.classList.add('no-photo')">
+      <div class="photo-fallback">SE</div>
+    </div>
+    <div class="hero-photo-tag">B.Tech CSE · 2026</div>
+  </div>
+  <div class="scroll-cue">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<main>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title reveal">About</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead reveal">
+        Motivated Computer Science &amp; Engineering student graduating in 2026,
+        with strong foundations in Java and full-stack web development.
+        I build responsive, scalable applications using the MERN stack
+        and I'm endlessly curious about modern tooling, REST APIs,
+        and clean database design.
+      </p>
+      <div class="about-facts reveal">
+        <div class="fact">
+          <span class="fact-num" data-count="8.2">0</span>
+          <span class="fact-label">CGPA / 10</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num" data-count="3">0</span>
+          <span class="fact-label">Internships</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num" data-count="2026">0</span>
+          <span class="fact-label">Graduating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title reveal">Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Programming</h3>
+        <ul><li>Java</li><li>JavaScript</li><li>OOPs &amp; Collections</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Frontend</h3>
+        <ul><li>HTML5 &amp; CSS3</li><li>React.js</li><li>Responsive UI</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Backend</h3>
+        <ul><li>Node.js &amp; Express</li><li>Java / Spring Boot</li><li>REST APIs</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Database &amp; Tools</h3>
+        <ul><li>MongoDB</li><li>MySQL (CRUD, Joins)</li><li>Git &amp; GitHub</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title reveal">Projects</h2>
+    </div>
+    <div class="project-list">
+      <article class="project-card reveal">
+        <div class="project-index">01</div>
+        <div class="project-body">
+          <h3>YouTube clone web application</h3>
+          <p>A fully responsive YouTube-inspired streaming platform with video search,
+          category filtering and dynamic content rendering via REST APIs.
+          Built with reusable React components and optimized for desktop, tablet and mobile.</p>
+          <div class="tags">
+            <span>React.js</span><span>JavaScript</span><span>REST APIs</span><span>Git</span>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal">
+        <div class="project-index">02</div>
+        <div class="project-body">
+          <h3>Fake job post detection (ML)</h3>
+          <p>A machine learning model that detects fraudulent job postings using data
+          preprocessing and feature engineering, paired with a web interface for live prediction.</p>
+          <div class="tags">
+            <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>JS</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title reveal">Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jul – Aug 2025</div>
+        <div class="timeline-content">
+          <h3>Java Spring Boot Intern</h3>
+          <p class="org">FemtoSoft Technologies</p>
+          <p>Worked on API development, backend logic and testing.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">May 2025</div>
+        <div class="timeline-content">
+          <h3>Cyber Security Intern</h3>
+          <p class="org">NLC India Limited</p>
+          <p>Conducted vulnerability analysis and identified security risks.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Oct 2023</div>
+        <div class="timeline-content">
+          <h3>IoT Intern</h3>
+          <p class="org">VEI Technology Pvt Ltd</p>
+          <p>Validated workflows and ensured data accuracy in IoT systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact-inner">
+      <span class="section-num">05</span>
+      <h2 class="contact-title reveal">Let's build<br>something<em>.</em></h2>
+      <p class="reveal">Open to opportunities, internships and collaborations. Reach out — I reply fast.</p>
+      <a href="mailto:sanjayelango777@gmail.com" class="contact-email reveal">sanjayelango777@gmail.com</a>
+      <div class="contact-links reveal">
+        <a href="https://github.com/SANJAY19122004" target="_blank" rel="noopener">GitHub</a>
+        <a href="tel:6380080642">+91 63800 80642</a>
+        <span>Villupuram, Tamil Nadu</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Sanjay. Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
